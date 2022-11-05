@@ -1,0 +1,147 @@
+---
+layout: home
+title: International Drought Resilience Alliance | UNCCD
+---
+
+<div class="absolute top-0 w-screen h-screen wrapper z-0 bg-cover" style="background: url('/images/idra-gradient.png'); background-size: cover;">
+</div>
+
+<div class="wrapper">
+
+  <div class="relative flex justify-center text-center z-10">
+    <div class="max-w-3xl mt-12 py-12">
+      <h1 class="text-white opacity-50">A Global Alliance</h1>
+      <p class="xl text-white opacity-80">No country is immune to drought and its impacts on food, water, energy security, forced migration and natural resource conflicts. Europe, the western United States, Chile, Australia, and the Horn of Africa have all suffered extreme droughts in recent years.</p>
+    </div>
+  </div>
+
+  <div x-data="carousel()" class="relative z-10 max-w-5xl mx-auto">
+      <img class="h-64 w-full object-cover object-center hero-image transition-all" :src="images[selected]" />
+    <div class="absolute bottom-0 w-full p-2 flex justify-center space-x-2">
+
+    <template x-for="(image,index) in images" :key="index">
+      <button @click="selected = index" :class="{'bg-neutral-100': selected == index, 'bg-neutral-300': selected != index}" class="h-0.5 w-5 bg-neutral-300"></button>
+    </template>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="wrapper my-8">
+
+  <div class="max-w-xl py-8 text-center mx-auto text-black ">
+    <h1 class="opacity-50">Impacts of Drought</h1>
+    <p class="xl">These unprecedented droughts have far-reaching impacts on agriculture, energy, transportation, tourism, and human health.</p>
+  </div>
+
+  <div class="max-w-4xl text-left mx-auto py-4 flex flex-row space-x-8 text-black">
+    <div>
+      <h3>$124 Billion loss</h3>
+      <p>From 1998 to 2017, drought generated economic losses of about US$124 billion across the world, not to mention the cost in human suffering and lives.</p>
+    </div>
+    <div>
+      <h3>700 Million people </h3>
+      <p>Climate change is expected to increase drought severity with the IPCC projecting that by 2030, drought will displace 700 million people in Africa alone.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="wrapper bg-life-50">
+
+  <div class="max-w-4xl text-left mx-auto py-4 flex flex-row space-x-8 text-black">
+    <div class="space-y-4">
+      <img class="logo-icon" src="/logos/idra-logo-icon-color.svg" />
+      <h2>World leaders recognize the need for a global collaborative platform.</h2>
+      <div class="pl-8 pr-12">
+        <p>Political engagement is at the highest level with a network of implementing partners to support countries and communities considering their different circumstances.</p>
+        <p>Responding to these needs, the International Drought Resilience Alliance was first announced by Spain at the 77th session of the UN General Assembly in September 2022 to be officially launched at the UNFCCC COP27 in November 2022.</p>
+        <p>Interested members of the Alliance see the urgent need to pivot from emergency response to increasing drought resilience through a more coordinated and effective response.</p>
+      </div>
+    </div>
+    <div class="">
+      <img class="hero-image" src="/images/IDRA-Turkey.jpg" />
+      <p class="small text-right text-neutral-500">Turkey</p>
+    </div>
+  </div>
+
+  <div class="relative z-10 max-w-5xl mx-auto py-4">
+    <div class="">
+      <img class="hero-image" src="/images/IDRA-Turkey.jpg" />
+      <p class="small text-right text-neutral-500">Turkey</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl py-8 text-center mx-auto text-black ">
+    <h1 class="opacity-50">Objective</h1>
+    <p class="xl">The Alliance will function as a collaborative platform that catalyzes political momentum and mobilizes resources for targeted actions to enhance drought resilience in countries, cities, and communities, including to:</p>
+  </div>
+
+  <div class="max-w-xl py-8 text-left mx-auto text-black ">
+    <ul class="checkmarks">
+      <li>
+        <p class="lg">Generate political momentum</p>
+        <p>We make drought resilience a global priority and for it to be mainstreamed in national development policies and donor relationships</p>
+      </li>
+      <li>
+        <p class="lg">Promote full engagement from stakeholders</p>
+        <p>Including the private sector, for increasing drought resilience</p>
+      </li>
+      <li>
+        <p class="lg">Facilitate knowledge sharing and networking</p>
+        <p>With other alliances and platforms to increase synergistic impacts that enhance drought resilience</p>
+      </li>
+      <li>
+        <p class="lg">Consolidate regional initiatives (programmes)</p>
+        <p>That facilitate action, innovation, technology and knowledge transfers, and resource mobilization for drought resilience at different levels</p>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div class="wrapper bg-sun-50">
+
+  <div class="max-w-3xl py-8 text-center mx-auto text-black ">
+    <h1 class="opacity-50">Governance</h1>
+    <p class="xl">The work of the Alliance will be guided by a steering committee with balanced regional representation and membership open to all Member States and their organs, UN entities and international organizations, scientific institutions, development banks and other financing mechanisms as well as non-state actors and civil society stakeholders.</p>
+  </div>
+
+  <div class="max-w-xl py-8 text-center mx-auto text-black ">
+    <h1 class="opacity-50">Roadmap</h1>
+    <ul class="checkmarks text-left">
+      <li>
+        <p class="xl">2023</p>
+        <p>UN Water Conference; High-Level Meeting on Drought (hosted by UNCCD, WMO and FAO); UNGA78, UNFCCC COP28</p>
+      </li>
+      <li>
+        <p class="xl">2022</p>
+        <p>UNFCCC COP27 and CBD COP15: Heads of State Launch Event; High Level Side Events; Steering Committee Meeting and Outreach Activities</p>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="flex flex-row space-x-4 wrapper justify-center">
+    <a href="" target="_blank" title=""><img class="logo-grid-item" alt="" src="/logos/logo-unccd.svg"  /></a>
+    <div class="vertical-rule"></div>
+    <a href="" target="_blank" title=""><img class="logo-grid-item" alt="" src="/logos/coa-espana.svg"  /></a>
+    <a href="" target="_blank" title=""><img class="logo-grid-item" alt="" src="/logos/coa-senegal.svg" /></a>
+</div>
+
+<script>
+  const carousel = () => {
+    return {
+        selected: 0,
+        images: [
+            "/images/IDRA-Turkey.jpg",
+            "/images/IDRA-India.jpg",
+            "/images/IDRA-Kenya.jpg",
+            "/images/IDRA-Vietnam.jpg"
+        ]
+    };
+};
+</script>

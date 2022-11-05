@@ -1,0 +1,9 @@
+baseURL = 'https://idralliance.com'
+languageCode = 'en-us'
+disableHugoGeneratorInject = true
+title = 'IDRA — International Drought Reslience Alliance'
+
+[params]
+copyright = "Copyright © 2022-2023 IDRA / UNCCD"
+metaDescription = "——"
+metaImage = "/images/open-graph.png"

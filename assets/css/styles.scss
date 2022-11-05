@@ -1,0 +1,211 @@
+@import "../../node_modules/tailwindcss/base";
+@import "../../node_modules/tailwindcss/components";
+@import "../../node_modules/tailwindcss/utilities";
+
+
+// Define Base Text Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+  @apply font-display;
+  font-weight: 100;
+  font-style: normal;
+}
+
+p,
+body,
+.body {
+  @apply font-body;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+}
+
+
+// Define Heading Customizations
+h1 {
+  @apply pb-1;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 172.5%;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: -0.02rem;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 172.5%;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+// Define Text Customizations
+p {
+  @apply pt-1;
+  @apply pb-1;
+}
+
+p.xl {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+p.lg {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+p.sm, caption {
+  font-size: 12px;
+  font-size: .75rem;
+  line-height: 172.5%;
+  letter-spacing: -0.02rem;
+  @apply py-0.5;
+  @apply px-0.5;
+}
+
+
+
+// Define Basic Formatting
+b, strong {
+  font-weight: bold;
+}
+
+i,
+em,
+.emphasized {
+  font-style: italic;
+}
+
+
+
+// Define Link Styles
+p a {
+  text-decoration: underline;
+}
+
+ul {
+
+}
+
+ul li {
+  @apply text-black ;
+}
+
+button.action {
+  @apply rounded-full;
+  @apply border-2;
+  @apply px-2;
+  @apply py-0.5;
+  @apply transition-all;
+
+  &:hover {
+      @apply opacity-50;
+      @apply text-neutral-300;
+  }
+}
+
+
+// Define Base wrappers and letter-spacing
+.wrapper {
+  @apply pt-4;
+  @apply pb-4;
+  @apply pl-4;
+  @apply pr-4;
+}
+
+
+// Define logo characteristics
+.logo {
+  width: 128px;
+  height: 68px;
+}
+
+.logo-icon {
+  width: 75px;
+  height: 50px;
+}
+
+// Define custom list Styles
+
+ul.checkmarks {
+
+  li {
+    @apply border-b;
+    @apply border-life-100;
+    @apply pl-2;
+    @apply py-4;
+
+    > p {
+      @apply pl-2;
+      @apply pr-4;
+    }
+
+  }
+
+  li::marker {
+    content: url('../../icons/checkmark.svg');
+  }
+}
+
+
+.vertical-rule {
+  min-height: 100%;
+  width: 2px;
+  content: "";
+  background: rgba(255,255,255,0.5);
+}
+
+
+// Define image defaults
+
+.hero-image {
+  @apply rounded;
+}
+
+.logo-grid-item {
+  width: auto;
+  height: 60px !important;
+  height: 3.75rem !important;
+}
+
+// Background Gradient Animation
+.idra-gradient {
+    background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);
+    background-size: 1000% 1000%;
+    -webkit-animation: IDRA 40s ease-in-out infinite;
+    -moz-animation: IDRA 40s ease-in-out infinite;
+    animation: IDRA 40s ease-in-out infinite;
+}
+@-webkit-keyframes IDRA {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
+@-moz-keyframes IDRA {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
+@keyframes IDRA {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
