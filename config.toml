@@ -1,4 +1,4 @@
-baseURL = 'https://idralliance.com'
+baseURL = 'https://idralliance.global'
 languageCode = 'en-us'
 disableHugoGeneratorInject = true
 title = 'IDRA — International Drought Reslience Alliance'
