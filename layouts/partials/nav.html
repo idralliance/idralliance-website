@@ -1,15 +1,26 @@
-<nav class="fixed top-0 z-50 w-screen wrapper">
-  <div class="mx-auto max-w-7xl flex justify-between items-center align-middle">
+<div x-data="{ atTop: false }">
+  <nav
+    class="fixed top-0 z-50 w-screen transition wrapper-small duration-500 ease-in-out"
+    :class="{ 'shadow-lg bg-white bg-opacity-80': atTop, 'bg-none wrapper': !atTop, 'transition-all': atTop }"
+    @scroll.window="atTop = (window.pageYOffset < 50) ? false: true"
+    >
+    <div class="mx-auto max-w-7xl flex justify-between items-center align-middle">
       <a href="/" class="transition-all">
-        <img class="logo" src="/logos/idra-logo-full.svg" />
+        <img
+          class="transition-all"
+          :class="{ 'h-5 w-auto': atTop, 'logo': !atTop, '': atTop }"
+          src="/logos/idra-logo-full.svg" />
       </a>
       <div class="space-x-2 items-center">
         <a target="_blank" href="https://www.instagram.com/" alt="">
           <button class="action border-black">
-            <p>Stay in touch</p>
+            <p
+              class="transition-all"
+              :class="{ 'sm': atTop, '': !atTop, '': atTop }"
+            >Stay in touch</p>
           </button>
         </a>
-
       </div>
-  </div>
-</nav>
+    </div>
+  </nav>
+</div>

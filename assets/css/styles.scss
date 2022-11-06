@@ -125,10 +125,12 @@ button.action {
 
 // Define Base wrappers and letter-spacing
 .wrapper {
-  @apply pt-4;
-  @apply pb-4;
-  @apply pl-4;
-  @apply pr-4;
+  @apply p-4;
+}
+
+.wrapper-small {
+  @apply py-2;
+  @apply px-4;
 }
 
 
@@ -153,15 +155,47 @@ ul.checkmarks {
     @apply pl-2;
     @apply py-4;
 
+    &:last-child {
+      @apply border-0;
+    }
+
     > p {
       @apply pl-2;
-      @apply pr-4;
+      @apply pr-2;
     }
 
   }
 
   li::marker {
     content: url('../../icons/checkmark.svg');
+  }
+}
+
+ul.gradient-list {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(0deg, #EA5830 6.12%, #F5A053 60.68%, #EFCB71 97.97%);
+  }
+
+  li {
+    @apply border-b;
+    @apply border-neutral-300;
+    @apply ml-4;
+    @apply py-4;
+
+    &:first-child {
+      @apply pt-1;
+    }
+    &:last-child {
+      @apply pb-1;
+      @apply border-0;
+    }
   }
 }
 
