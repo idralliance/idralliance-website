@@ -225,6 +225,15 @@ ul.gradient-list {
   height: auto;
 }
 
+.partner-small {
+  @apply w-6;
+  height: auto;
+}
+.partner-small-v {
+  @apply h-4;
+  width: auto;
+}
+
 // Background Gradient Animation
 .idra-gradient {
     background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);

@@ -19091,6 +19091,16 @@ ul.gradient-list li:last-child {
   height: auto;
 }
 
+.partner-small {
+  width: 48px;
+  height: auto;
+}
+
+.partner-small-v {
+  height: 32px;
+  width: auto;
+}
+
 .idra-gradient {
   background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);
   background-size: 1000% 1000%;
