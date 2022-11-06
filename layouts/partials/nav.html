@@ -1,7 +1,7 @@
 <div x-data="{ atTop: false }">
   <nav
     class="fixed top-0 z-50 w-screen transition wrapper-small duration-500 ease-in-out"
-    :class="{ 'shadow-lg bg-white bg-opacity-80': atTop, 'bg-none wrapper': !atTop, 'transition-all': atTop }"
+    :class="{ '': atTop, 'bg-none wrapper': !atTop, 'transition-all': atTop }"
     @scroll.window="atTop = (window.pageYOffset < 50) ? false: true"
     >
     <div class="mx-auto max-w-7xl flex justify-between items-center align-middle">
