@@ -220,6 +220,11 @@ ul.gradient-list {
   height: 3.75rem !important;
 }
 
+.flag-small {
+  @apply w-8;
+  height: auto;
+}
+
 // Background Gradient Animation
 .idra-gradient {
     background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);

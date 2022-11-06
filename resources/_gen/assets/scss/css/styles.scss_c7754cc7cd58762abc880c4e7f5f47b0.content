@@ -19086,6 +19086,11 @@ ul.gradient-list li:last-child {
   height: 3.75rem !important;
 }
 
+.flag-small {
+  width: 64px;
+  height: auto;
+}
+
 .idra-gradient {
   background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);
   background-size: 1000% 1000%;
