@@ -19082,8 +19082,8 @@ ul.gradient-list li:last-child {
 
 .logo-grid-item {
   width: auto;
-  height: 60px !important;
-  height: 3.75rem !important;
+  height: 80px !important;
+  height: 5rem !important;
 }
 
 .flag-small {
