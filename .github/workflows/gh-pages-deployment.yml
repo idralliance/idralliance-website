@@ -1,10 +1,6 @@
 # Hugo Workflow
 name: Deploy Hugo with GitHub Pages
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
 on:
   # Runs on pushes targeting the default branch
   push:
