@@ -67,8 +67,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.IDRA_SECRET }}
+        with:
+          DEPLOY_KEY: ${{ secrets.IDRA_SECRET }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
-        
