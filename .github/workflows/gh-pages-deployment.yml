@@ -68,7 +68,7 @@ jobs:
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          ACTIONS_DEPLOY_KEY: ${{ secrets.IDRA_SECRET }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
         
