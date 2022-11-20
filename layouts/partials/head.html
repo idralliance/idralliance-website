@@ -39,18 +39,18 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="Catch the latest news from the IDRA, the global alliance for drought resilience and preparedness">
-    <meta property="og:image" content="{{ $metaImage }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $metaImage }}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{{ .Title }}">
-    <meta property="twitter:description" content="Catch the latest news from the IDRA, the global alliance for drought resilience and preparedness">
-    <meta property="twitter:image" content="/images/og-image-twitter.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="Catch the latest news from the IDRA, the global alliance for drought resilience and preparedness">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $metaImage }}">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 

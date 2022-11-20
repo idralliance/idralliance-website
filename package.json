@@ -1,7 +1,7 @@
 {
   "name": "IDRA Homepage",
   "version": "0.9",
-  "description": "Droughtland Website",
+  "description": "International Drought Resilience Alliance Website",
   "main": "index.js",
   "scripts": {},
   "author": "Høst",
@@ -25,7 +25,7 @@
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/idralliance/idralliance-website/issues"
+    "url": "https://github.com/idralliance/idralliance.github.io/issues"
   },
-  "homepage": "https://github.com/idralliance/idralliance-website#readme"
+  "homepage": "https://github.com/idralliance/idralliance.github.io#readme"
 }
