@@ -235,6 +235,15 @@ ul.gradient-list {
   width: auto;
 }
 
+// Define countries section wrapper styles
+.supporting-entity-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7)
+}
+// Define
 // Background Gradient Animation
 .idra-gradient {
     background: linear-gradient(139deg, #BC2E07, #F1882A, #EBBC47, #5F9E91, #52ADC6);
