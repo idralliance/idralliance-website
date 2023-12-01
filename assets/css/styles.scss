@@ -225,6 +225,10 @@ ul.gradient-list {
   @apply h-6;
   width:auto;
 }
+.flag-text {
+  @apply w-12;
+  height:auto;
+}
 
 .partner-small {
   @apply w-8;
@@ -240,7 +244,7 @@ ul.gradient-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   color: rgba(0, 0, 0, 0.7)
 }
 // Define
